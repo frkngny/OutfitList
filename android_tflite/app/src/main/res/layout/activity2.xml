@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_above="@id/result_tv"/>
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_above="@id/btnCamera"/>
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:text="Open Camera"
+        android:onClick="btnCameraClicked"
+        android:layout_above="@id/btnGallery"/>
+
+    <Button
+        android:id="@+id/btnGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:text="Gallery"
+        android:onClick="btnGalleryClicked"
+        android:layout_above="@id/btnClassify"/>
+
+    <Button
+        android:id="@+id/btnClassify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:text="Classify"
+        android:onClick="btnClassifyClicked"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
